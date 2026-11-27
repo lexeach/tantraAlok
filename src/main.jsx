@@ -11,7 +11,15 @@ const serviceCards = [
  {title:'Tantra for Individuals',text:'Explore mindfulness, relaxation, and body awareness at your own pace.',image:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85',href:'/tantra-for-individuals'}
 ];
 const pageCopy = {
- '/about-us': ['About TantraAlok','A welcoming space for awareness, connection, and personal exploration.','TantraAlok offers guided online practices inspired by mindfulness, breathwork, and body awareness. Our approach centers on respect, choice, and meeting each participant where they are.'],
+ '/about-us': ['About TantraAlok','A welcoming space for awareness, connection, and personal exploration.','At TantraAlok, we believe that meaningful connection begins with awareness, presence, and a deeper understanding of ourselves. Our guided online sessions invite individuals and couples to explore Tantra-inspired practices in a welcoming, supportive, and respectful environment.
+
+Through mindfulness, conscious breathing, meditation, and gentle body-awareness exercises, we create opportunities to slow down, reconnect with the present moment, and become more attentive to our own experiences and those of our partners.
+
+Our approach is rooted in the belief that every individual has a unique journey. Whether you are exploring Tantra for the first time, seeking greater self-awareness, or wishing to nurture a deeper connection with your partner, our sessions are designed to meet you where you are.
+
+We place great importance on personal choice, mutual respect, and emotional comfort. Every participant is encouraged to move at their own pace, communicate their boundaries, and engage only in practices that feel right for them.
+
+At TantraAlok, we offer a space to explore, learn, and grow through mindful experiences that honor your individuality and your journey toward greater awareness and connection.'],
  '/meet-your-guide': ['Meet Gautam','Founder & Tantra Guide, TantraAlok','Gautam welcomes adults and couples to explore Tantra-inspired practices through guided online sessions focused on mindfulness, body awareness, relaxation, and connection. His approach emphasizes personal comfort, mutual respect, and the freedom to explore at one’s own pace.'],
  '/what-is-tantra': ['What Is Tantra?','A beginner-friendly introduction to awareness and connection.','Tantra is a diverse set of spiritual and contemplative traditions. In contemporary wellness settings, Tantra-inspired sessions may draw on presence, breath, meditation, and mindful connection. Practices and interpretations vary; this introduction is not a substitute for studying a specific tradition with a qualified teacher.'],
  '/tantra-and-india': ['Tantra & India','Explore the diverse history and living traditions of Tantra.','Tantra developed across diverse Indian religious and philosophical traditions, including Hindu and Buddhist lineages. Its history includes ritual, mantra, meditation, and complex philosophical teachings. No single summary can represent every tradition, and modern wellness practices should not be confused with traditional lineages.'],
