@@ -235,51 +235,55 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
 @media(prefers-reduced-motion:reduce){main:has(> .hero) > .split-section:before,main:has(> .hero) > .testimonials:after,main:has(> .hero) > .faq-preview:before,main:has(> .hero) > .section:before,main:has(> .hero) > .section:after{animation:none!important;transform:none!important}}
 
 
-/* Full-height animated cosmic side scenery on the Home page */
+/* Full-height cosmic side scenery: layered planets, nebulae and star fields */
 @media(min-width:1100px){
   main:has(> .hero){position:relative;isolation:isolate;overflow:clip;}
   main:has(> .hero):before,
   main:has(> .hero):after{
-    content:"";position:fixed;z-index:0;top:164px;bottom:0;width:max(0px,calc((100vw - 800px)/2));pointer-events:none;overflow:hidden;
-    background-repeat:no-repeat;
-    opacity:1;
+    content:"";position:fixed;z-index:2;top:164px;bottom:0;width:max(0px,calc((100vw - 700px)/2));pointer-events:none;overflow:hidden;
+    background-repeat:no-repeat;opacity:.98;will-change:transform,filter;
   }
   main:has(> .hero):before{
     left:0;
     background:
-      radial-gradient(circle at 70% 12%,#fff9d9 0 1.5px,transparent 2.5px),
-      radial-gradient(circle at 23% 22%,#c89b67 0 2px,transparent 3px),
-      radial-gradient(circle at 84% 38%,#fff8e2 0 1.5px,transparent 2.5px),
-      radial-gradient(circle at 18% 56%,#9e6a80 0 2px,transparent 3px),
-      radial-gradient(circle at 76% 76%,#fff8dc 0 2px,transparent 3px),
-      radial-gradient(ellipse at 18% 46%,#d6b4cf4a 0,transparent 40%),
-      radial-gradient(circle at 62% 29%,#d9b36f 0 34px,#b7834c 35px 37px,#ead4a5 38px 43px,#9e6878 44px 62px,#704454 63px 66px,transparent 67px),
-      radial-gradient(circle at 15% 83%,#e9cda0 0 19px,#b78c54 20px 22px,#f6e7c9 23px 26px,#9d6a7d 27px 39px,transparent 40px),
-      radial-gradient(ellipse at 10% 18%,#d8b7a7 0,transparent 55%);
-    animation:cosmicLeftFloat 26s ease-in-out infinite alternate;
+      radial-gradient(circle at 16% 8%,#fff8dc 0 2px,transparent 3px),
+      radial-gradient(circle at 82% 17%,#d8b16d 0 2px,transparent 3px),
+      radial-gradient(circle at 35% 34%,#fff9e6 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 88% 51%,#a97991 0 2.5px,transparent 3.5px),
+      radial-gradient(circle at 20% 72%,#fff8dc 0 2px,transparent 3px),
+      radial-gradient(circle at 74% 91%,#d8b16d 0 2px,transparent 3px),
+      radial-gradient(ellipse at 20% 30%,#c8a1d04a 0,transparent 42%),
+      radial-gradient(ellipse at 82% 72%,#e7c18b55 0,transparent 44%),
+      radial-gradient(circle at 66% 22%,#f8df9d 0 22px,#b7834c 23px 26px,#f6e7c9 27px 34px,#a16c80 35px 49px,#704454 50px 53px,transparent 54px),
+      radial-gradient(ellipse 90px 24px at 66% 22%,transparent 41%,#b7834c 43% 46%,transparent 48%),
+      radial-gradient(circle at 22% 56%,#f4d8a0 0 13px,#b7834c 14px 16px,#f6e7c9 17px 21px,#9d6a7d 22px 30px,transparent 31px),
+      radial-gradient(ellipse at 8% 88%,#d8b7a74a 0,transparent 52%);
+    animation:cosmicLeftFloat 24s ease-in-out infinite alternate;
   }
   main:has(> .hero):after{
     right:0;
     background:
-      radial-gradient(circle at 22% 15%,#fff9d9 0 1.5px,transparent 2.5px),
-      radial-gradient(circle at 82% 28%,#c89b67 0 2px,transparent 3px),
-      radial-gradient(circle at 30% 49%,#fff8e2 0 1.5px,transparent 2.5px),
-      radial-gradient(circle at 76% 69%,#9e6a80 0 2px,transparent 3px),
-      radial-gradient(circle at 19% 88%,#fff8dc 0 2px,transparent 3px),
-      radial-gradient(ellipse at 86% 58%,#c3a4ce40 0,transparent 43%),
-      radial-gradient(circle at 44% 24%,#e8c58a 0 26px,#b9854f 27px 29px,#f2dfc6 30px 34px,#c89b67 35px 37px,transparent 38px),
-      radial-gradient(circle at 78% 78%,#e9cda0 0 43px,#b78c54 44px 46px,#f6e7c9 47px 52px,#9d6a7d 53px 75px,#704454 76px 79px,transparent 80px),
-      radial-gradient(ellipse at 90% 20%,#d8b7a7 0,transparent 55%);
-    animation:cosmicRightFloat 30s ease-in-out infinite alternate;
+      radial-gradient(circle at 18% 12%,#fff9d9 0 2px,transparent 3px),
+      radial-gradient(circle at 78% 25%,#d8b16d 0 2px,transparent 3px),
+      radial-gradient(circle at 27% 43%,#fff8e2 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 83% 61%,#a97991 0 2.5px,transparent 3.5px),
+      radial-gradient(circle at 30% 82%,#fff8dc 0 2px,transparent 3px),
+      radial-gradient(circle at 72% 94%,#d8b16d 0 2px,transparent 3px),
+      radial-gradient(ellipse at 84% 28%,#c3a4ce55 0,transparent 43%),
+      radial-gradient(ellipse at 20% 76%,#e7c18b50 0,transparent 46%),
+      radial-gradient(circle at 42% 27%,#e8c58a 0 28px,#b9854f 29px 32px,#f2dfc6 33px 39px,#c89b67 40px 43px,transparent 44px),
+      radial-gradient(ellipse 110px 30px at 42% 27%,transparent 41%,#b7834c 43% 46%,transparent 48%),
+      radial-gradient(circle at 77% 69%,#e9cda0 0 40px,#b78c54 41px 44px,#f6e7c9 45px 51px,#9d6a7d 52px 70px,#704454 71px 74px,transparent 75px),
+      radial-gradient(ellipse at 95% 92%,#d8b7a74a 0,transparent 54%);
+    animation:cosmicRightFloat 28s ease-in-out infinite alternate;
   }
+  /* Artwork occupies the side gutters only; keep the center content above it. */
   main:has(> .hero)>*{position:relative;z-index:1}
   main:has(> .hero)>.hero{z-index:1}
 }
-@keyframes cosmicLeftFloat{0%{background-position:0 0;filter:brightness(.95)}50%{background-position:5px -18px;filter:brightness(1.08)}100%{background-position:-6px 12px;filter:brightness(1)}}
-@keyframes cosmicRightFloat{0%{background-position:0 0;filter:brightness(1)}50%{background-position:-7px 16px;filter:brightness(1.1)}100%{background-position:6px -12px;filter:brightness(.96)}}
-@media(max-width:1099px){
-  main:has(> .hero):before,main:has(> .hero):after{content:none!important}
-}
-@media(prefers-reduced-motion:reduce){
-  main:has(> .hero):before,main:has(> .hero):after{animation:none!important}
+@keyframes cosmicLeftFloat{0%{transform:translate3d(0,0,0) rotate(-.4deg);filter:brightness(.9)}50%{transform:translate3d(0,-12px,0) rotate(.4deg);filter:brightness(1.12)}100%{transform:translate3d(0,8px,0);filter:brightness(1)}}
+@keyframes cosmicRightFloat{0%{transform:translate3d(0,0,0) rotate(.4deg);filter:brightness(1)}50%{transform:translate3d(0,14px,0) rotate(-.4deg);filter:brightness(1.14)}100%{transform:translate3d(0,-8px,0);filter:brightness(.96)}}
+@media(max-width:1099px){main:has(> .hero):before,main:has(> .hero):after{content:none!important}}
+@media(prefers-reduced-motion:reduce){main:has(> .hero):before,main:has(> .hero):after{animation:none!important}}
+
 }
