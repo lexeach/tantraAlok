@@ -123,3 +123,16 @@
 @media(prefers-reduced-motion:reduce){
   .inner-hero-image.india-heritage-image{animation:none}
 }
+
+/* Tantra & India: heritage artwork blended into the page canvas (not a standalone image card) */
+.india-page-hero{position:relative;isolation:isolate;}
+.india-page-hero:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 76% 48%,rgba(255,250,242,.12) 0%,rgba(250,241,226,.62) 45%,#fbf5ec 78%),url('/tantra-india-heritage.png') right center/auto 120% no-repeat;opacity:.42;mix-blend-mode:multiply;pointer-events:none;animation:indiaBackdropDrift 18s ease-in-out infinite alternate;}
+.india-page-hero .hero-orbit{opacity:.5;}
+.india-page .india-feature{position:relative;display:block;min-height:420px;padding:clamp(28px,5vw,62px) clamp(24px,5vw,64px);border-radius:28px;overflow:hidden;isolation:isolate;background:#fbf5ec;}
+.india-page .india-feature:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#fbf5ec 0%,rgba(251,245,236,.98) 34%,rgba(251,245,236,.72) 58%,rgba(251,245,236,.2) 100%),url('/tantra-india-heritage.png') right 46%/auto 118% no-repeat;mix-blend-mode:multiply;opacity:.82;transform:scale(1.015);animation:indiaBackdropDrift 22s ease-in-out infinite alternate;}
+.india-page .india-feature-copy{max-width:67%;position:relative;z-index:1;}
+.india-page .india-feature-copy p{max-width:760px;}
+.india-page .india-photo{display:none;}
+@keyframes indiaBackdropDrift{from{background-position:right 46%;}to{background-position:right 53%;}}
+@media(max-width:800px){.india-page-hero:before{background-position:center;background-size:auto 100%;opacity:.22}.india-page .india-feature{min-height:0;padding:26px 20px}.india-page .india-feature:before{background:linear-gradient(90deg,rgba(251,245,236,.94),rgba(251,245,236,.78)),url('/tantra-india-heritage.png') center/cover no-repeat;opacity:.48}.india-page .india-feature-copy{max-width:100%;}}
+@media(prefers-reduced-motion:reduce){.india-page-hero:before,.india-page .india-feature:before{animation:none;}}
