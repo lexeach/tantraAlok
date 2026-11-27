@@ -286,4 +286,4 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
 @media(max-width:1099px){main:has(> .hero):before,main:has(> .hero):after{content:none!important}}
 @media(prefers-reduced-motion:reduce){main:has(> .hero):before,main:has(> .hero):after{animation:none!important}}
 
-}
+
