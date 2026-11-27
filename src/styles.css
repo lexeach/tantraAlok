@@ -362,3 +362,66 @@ main:has(> .hero) > .cosmic-bubble-field .cosmic-bubble-7:after {
   transform: rotate(-32deg) scaleY(.6);
   border-width: 2px;
 }
+
+/* Center-align the four Home sections following the session cards */
+main:has(> .hero) > .split-section,
+main:has(> .hero) > .testimonials,
+main:has(> .hero) > .faq-preview,
+main:has(> .hero) > .cta {
+  text-align: center;
+}
+main:has(> .hero) > .split-section > div:first-child {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 900px;
+  border-right: 0;
+  border-bottom: 1px solid #d8c5b1;
+  padding-bottom: 34px;
+}
+main:has(> .hero) > .split-section .trainer {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  justify-items: center;
+  text-align: center;
+}
+main:has(> .hero) > .split-section .trainer > div:last-child {
+  max-width: 760px;
+  margin-inline: auto;
+}
+main:has(> .hero) > .testimonials {
+  justify-items: center;
+}
+main:has(> .hero) > .testimonials h2,
+main:has(> .hero) > .testimonials blockquote {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+main:has(> .hero) > .testimonials blockquote {
+  border-left: 0;
+  border-top: 1px solid #c49b68;
+  padding: 24px 18px;
+}
+main:has(> .hero) > .testimonials blockquote cite {
+  display: block;
+  text-align: center;
+}
+main:has(> .hero) > .faq-preview {
+  justify-items: center;
+}
+main:has(> .hero) > .faq-preview h2,
+main:has(> .hero) > .faq-preview > div {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+main:has(> .hero) > .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main:has(> .hero) > .cta p {
+  max-width: 760px;
+  margin-inline: auto;
+}
