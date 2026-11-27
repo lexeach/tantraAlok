@@ -136,3 +136,18 @@
 @keyframes indiaBackdropDrift{from{background-position:right 46%;}to{background-position:right 53%;}}
 @media(max-width:800px){.india-page-hero:before{background-position:center;background-size:auto 100%;opacity:.22}.india-page .india-feature{min-height:0;padding:26px 20px}.india-page .india-feature:before{background:linear-gradient(90deg,rgba(251,245,236,.94),rgba(251,245,236,.78)),url('/tantra-india-heritage.png') center/cover no-repeat;opacity:.48}.india-page .india-feature-copy{max-width:100%;}}
 @media(prefers-reduced-motion:reduce){.india-page-hero:before,.india-page .india-feature:before{animation:none;}}
+
+/* Tantra & India right rail: related service navigation cards */
+.india-service-panel{padding:22px 18px;background:rgba(246,234,219,.94);border:1px solid #ead7c2;box-shadow:0 16px 38px #4b2b2210;}
+.india-service-panel>.eyebrow{font-size:9px;letter-spacing:1.4px;}
+.india-service-panel h3{margin:9px 0 8px;font-size:22px;}
+.india-service-panel>p{margin:0 0 16px;}
+.india-service-links{display:grid;gap:10px;}
+.india-service-link{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:start;padding:13px 11px;border:1px solid #e7d2bb;border-radius:11px;background:#fffaf4;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+.india-service-link:hover,.india-service-link:focus-visible{transform:translateY(-3px);border-color:#c69a61;box-shadow:0 9px 20px #5a2b2412;outline:none;}
+.india-service-symbol{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#f1e1ce;color:#a76c34;font-size:21px;}
+.india-service-link strong{display:block;color:var(--wine);font:600 16px 'Playfair Display',serif;margin:1px 0 5px;}
+.india-service-link small{display:block;color:#76645a;font-size:11px;line-height:1.45;margin-bottom:8px;}
+.india-service-link b{display:inline-flex;align-items:center;gap:5px;color:var(--wine);font-size:10px;}
+@media(max-width:800px){.india-service-panel{grid-row:auto}.india-service-links{grid-template-columns:1fr 1fr}.india-service-link{grid-template-columns:28px minmax(0,1fr);padding:11px 9px}.india-service-symbol{width:27px;height:27px;font-size:18px}}
+@media(max-width:520px){.india-service-links{grid-template-columns:1fr}}
