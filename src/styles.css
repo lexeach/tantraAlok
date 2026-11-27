@@ -233,3 +233,53 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
 @keyframes cosmicMoonDrift{0%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(-12px,-14px,0) rotate(-12deg)}100%{transform:translate3d(7px,10px,0) rotate(12deg)}}
 @media(max-width:760px){main:has(> .hero) > .section:before{left:2px;top:9%;width:90px}main:has(> .hero) > .section:after{right:2px;bottom:6%;width:76px}main:has(> .hero) > .section .service-grid{max-width:100%;gap:24px}main:has(> .hero) > .section .service-card{max-width:100%}}
 @media(prefers-reduced-motion:reduce){main:has(> .hero) > .split-section:before,main:has(> .hero) > .testimonials:after,main:has(> .hero) > .faq-preview:before,main:has(> .hero) > .section:before,main:has(> .hero) > .section:after{animation:none!important;transform:none!important}}
+
+
+/* Full-height animated cosmic side scenery on the Home page */
+@media(min-width:1100px){
+  main:has(> .hero){position:relative;isolation:isolate;overflow:clip;}
+  main:has(> .hero):before,
+  main:has(> .hero):after{
+    content:"";position:fixed;z-index:0;top:164px;bottom:0;width:max(0px,calc((100vw - 800px)/2));pointer-events:none;overflow:hidden;
+    background-repeat:no-repeat;
+    opacity:1;
+  }
+  main:has(> .hero):before{
+    left:0;
+    background:
+      radial-gradient(circle at 70% 12%,#fff9d9 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 23% 22%,#c89b67 0 2px,transparent 3px),
+      radial-gradient(circle at 84% 38%,#fff8e2 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 18% 56%,#9e6a80 0 2px,transparent 3px),
+      radial-gradient(circle at 76% 76%,#fff8dc 0 2px,transparent 3px),
+      radial-gradient(ellipse at 18% 46%,#d6b4cf4a 0,transparent 40%),
+      radial-gradient(circle at 62% 29%,#d9b36f 0 34px,#b7834c 35px 37px,#ead4a5 38px 43px,#9e6878 44px 62px,#704454 63px 66px,transparent 67px),
+      radial-gradient(circle at 15% 83%,#e9cda0 0 19px,#b78c54 20px 22px,#f6e7c9 23px 26px,#9d6a7d 27px 39px,transparent 40px),
+      radial-gradient(ellipse at 10% 18%,#d8b7a7 0,transparent 55%);
+    animation:cosmicLeftFloat 26s ease-in-out infinite alternate;
+  }
+  main:has(> .hero):after{
+    right:0;
+    background:
+      radial-gradient(circle at 22% 15%,#fff9d9 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 82% 28%,#c89b67 0 2px,transparent 3px),
+      radial-gradient(circle at 30% 49%,#fff8e2 0 1.5px,transparent 2.5px),
+      radial-gradient(circle at 76% 69%,#9e6a80 0 2px,transparent 3px),
+      radial-gradient(circle at 19% 88%,#fff8dc 0 2px,transparent 3px),
+      radial-gradient(ellipse at 86% 58%,#c3a4ce40 0,transparent 43%),
+      radial-gradient(circle at 44% 24%,#e8c58a 0 26px,#b9854f 27px 29px,#f2dfc6 30px 34px,#c89b67 35px 37px,transparent 38px),
+      radial-gradient(circle at 78% 78%,#e9cda0 0 43px,#b78c54 44px 46px,#f6e7c9 47px 52px,#9d6a7d 53px 75px,#704454 76px 79px,transparent 80px),
+      radial-gradient(ellipse at 90% 20%,#d8b7a7 0,transparent 55%);
+    animation:cosmicRightFloat 30s ease-in-out infinite alternate;
+  }
+  main:has(> .hero)>*{position:relative;z-index:1}
+  main:has(> .hero)>.hero{z-index:1}
+}
+@keyframes cosmicLeftFloat{0%{background-position:0 0;filter:brightness(.95)}50%{background-position:5px -18px;filter:brightness(1.08)}100%{background-position:-6px 12px;filter:brightness(1)}}
+@keyframes cosmicRightFloat{0%{background-position:0 0;filter:brightness(1)}50%{background-position:-7px 16px;filter:brightness(1.1)}100%{background-position:6px -12px;filter:brightness(.96)}}
+@media(max-width:1099px){
+  main:has(> .hero):before,main:has(> .hero):after{content:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  main:has(> .hero):before,main:has(> .hero):after{animation:none!important}
+}
