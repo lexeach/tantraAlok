@@ -7,8 +7,8 @@ const pages = [
  ['Home','/'],['About Us','/about-us'],['Meet Your Tantra Guide','/meet-your-guide'],['What Is Tantra?','/what-is-tantra'],['Tantra & India','/tantra-and-india'],['Our Services','/services'],['Tantra for Couples','/tantra-for-couples'],['Tantra for Individuals','/tantra-for-individuals'],['Pricing & Packages','/pricing'],['Book a Session','/book-session'],['Testimonials','/testimonials'],['Contact Us','/contact-us'],['Frequently Asked Questions','/faq'],['Safety, Consent & Boundaries','/safety-and-consent'],['Tantra Journal','/journal'],['Privacy Policy','/privacy-policy'],['Terms & Cancellation Policy','/terms-and-cancellation']
 ];
 const serviceCards = [
- {title:'Tantra for Couples',text:'Explore shared awareness, communication, and intimacy in a safe and respectful space.',image:'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85',href:'/tantra-for-couples'},
- {title:'Tantra for Individuals',text:'Explore mindfulness, relaxation, and body awareness at your own pace.',image:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85',href:'/tantra-for-individuals'}
+ {title:'Tantra for Couples',text:'Explore shared awareness, communication, and intimacy in a safe and respectful space.',image:'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2000&q=95',href:'/tantra-for-couples'},
+ {title:'Tantra for Individuals',text:'Explore mindfulness, relaxation, and body awareness at your own pace.',image:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=2000&q=95',href:'/tantra-for-individuals'}
 ];
 const pageCopy = {
  '/about-us': ['About TantraAlok','A welcoming space for awareness, connection, and personal exploration.','At TantraAlok, we believe that meaningful connection begins with awareness, presence, and a deeper understanding of ourselves. Our guided online sessions invite individuals and couples to explore Tantra-inspired practices in a welcoming, supportive, and respectful environment. Through mindfulness, conscious breathing, meditation, and gentle body-awareness exercises, we create opportunities to slow down, reconnect with the present moment, and become more attentive to our own experiences and those of our partners. Our approach is rooted in the belief that every individual has a unique journey. Whether you are exploring Tantra for the first time, seeking greater self-awareness, or wishing to nurture a deeper connection with your partner, our sessions are designed to meet you where you are. We place great importance on personal choice, mutual respect, and emotional comfort. Every participant is encouraged to move at their own pace, communicate their boundaries, and engage only in practices that feel right for them. At TantraAlok, we offer a space to explore, learn, and grow through mindful experiences that honor your individuality and your journey toward greater awareness and connection.'],
@@ -29,22 +29,22 @@ const pageCopy = {
  '/terms-and-cancellation': ['Terms & Cancellation Policy','Important information about sessions and bookings.','This page is a starter placeholder. Before launch, add the final eligibility, payment, rescheduling, cancellation, refund, technical interruption, and service terms.']
 };
 const pageVisuals = {
- '/about-us': ['https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85','A serene, welcoming wellness space'],
+ '/about-us': ['https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=95','A serene, welcoming wellness space'],
  '/meet-your-guide': ['https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=85','Portrait placeholder for the Tantra guide'],
- '/what-is-tantra': ['https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=85','Meditation and mindful awareness'],
+ '/what-is-tantra': ['https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=2000&q=95','Meditation and mindful awareness'],
  '/tantra-and-india': ['/tantra-india-heritage.png','An Indian temple courtyard at sunrise with traditional books, a diya, and lotus pond'],
- '/services': ['https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=1200&q=85','A peaceful guided wellness session'],
- '/tantra-for-couples': ['https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85','A couple sharing a quiet moment'],
- '/tantra-for-individuals': ['https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=85','An individual practicing meditation'],
- '/pricing': ['https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1200&q=85','A calm, considered wellness setting'],
- '/book-session': ['https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=85','A peaceful space to begin a session'],
- '/testimonials': ['https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85','People connecting in a welcoming setting'],
- '/contact-us': ['https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=85','Calm natural scenery'],
- '/faq': ['https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85','A peaceful landscape'],
- '/safety-and-consent': ['https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85','A supportive and respectful connection'],
- '/journal': ['https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=85','A quiet place for reading and reflection'],
- '/privacy-policy': ['https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85','A calm and organized workspace'],
- '/terms-and-cancellation': ['https://images.unsplash.com/photo-1455390582262-044c58a6e9e7?auto=format&fit=crop&w=1200&q=85','A notebook for clear agreements']
+ '/services': ['https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=2000&q=95','A peaceful guided wellness session'],
+ '/tantra-for-couples': ['https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2000&q=95','A couple sharing a quiet moment'],
+ '/tantra-for-individuals': ['https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=2000&q=95','An individual practicing meditation'],
+ '/pricing': ['https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=2000&q=95','A calm, considered wellness setting'],
+ '/book-session': ['https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=2000&q=95','A peaceful space to begin a session'],
+ '/testimonials': ['https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2000&q=95','People connecting in a welcoming setting'],
+ '/contact-us': ['https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=2000&q=95','Calm natural scenery'],
+ '/faq': ['https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=95','A peaceful landscape'],
+ '/safety-and-consent': ['https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2000&q=95','A supportive and respectful connection'],
+ '/journal': ['https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=2000&q=95','A quiet place for reading and reflection'],
+ '/privacy-policy': ['https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=95','A calm and organized workspace'],
+ '/terms-and-cancellation': ['https://images.unsplash.com/photo-1455390582262-044c58a6e9e7?auto=format&fit=crop&w=2000&q=95','A notebook for clear agreements']
 };
 function App(){
  const [path,setPath]=useState(window.location.pathname),[mobile,setMobile]=useState(false),[menu,setMenu]=useState(false),[sent,setSent]=useState(false);

@@ -195,11 +195,14 @@ main:has(> .hero) > .hero .hero-image{width:100%;min-height:clamp(300px,42vw,590
 main:has(> .hero) > .benefits{flex-wrap:wrap;justify-content:center;gap:18px clamp(18px,4vw,55px);padding:25px 5%;}
 main:has(> .hero) > .benefits i{display:none}
 main:has(> .hero) > .section{padding:clamp(55px,7vw,92px) max(5.2%,calc((100% - 1180px)/2));background:radial-gradient(ellipse at 95% 8%,#ead9c41f 0,transparent 34%),#fffaf4;}
+main:has(> .hero) > .section:before,main:has(> .hero) > .section:after{content:'';position:absolute;z-index:0;pointer-events:none;width:clamp(110px,15vw,220px);aspect-ratio:1;border-radius:50%;opacity:.78;background:radial-gradient(circle at 35% 30%,#fff8dc 0 2px,transparent 3px),radial-gradient(circle at 70% 18%,#b98a52 0 1.5px,transparent 2.5px),radial-gradient(circle at 22% 65%,#9c6a83 0 2px,transparent 3px),radial-gradient(circle at 78% 74%,#d2aa67 0 1.5px,transparent 2.5px),radial-gradient(circle at 50% 50%,#e9c98d 0 9%,#d5a66d 10% 11%,#8e5266 12% 24%,#6e3549 25% 26%,transparent 27%);filter:drop-shadow(0 0 18px #c49b6840)}
+main:has(> .hero) > .section:before{left:clamp(10px,4vw,70px);top:18%;}
+main:has(> .hero) > .section:after{right:clamp(10px,4vw,70px);bottom:12%;width:clamp(90px,12vw,170px);background:radial-gradient(circle at 25% 20%,#fff8dc 0 2px,transparent 3px),radial-gradient(circle at 75% 40%,#b98a52 0 1.5px,transparent 2.5px),radial-gradient(circle at 20% 75%,#9c6a83 0 2px,transparent 3px),radial-gradient(circle at 50% 50%,#e8c58a 0 8%,#b9854f 9% 10%,#f2dfc6 11% 24%,#c89b67 25% 27%,transparent 28%)}
 main:has(> .hero) > .section .section-head{max-width:850px;margin:0 auto 38px}
 main:has(> .hero) > .section .section-head h2{font-size:clamp(30px,3.3vw,44px)}
-main:has(> .hero) > .section .service-grid{grid-template-columns:minmax(0,1fr);gap:28px;max-width:1000px;margin:auto}
-main:has(> .hero) > .section .service-card{grid-template-columns:minmax(0,1fr);min-height:0;border-radius:20px;background:#f7ecdf;box-shadow:0 16px 40px #4c24120c}
-main:has(> .hero) > .section .service-card img{height:clamp(240px,32vw,430px);min-height:0;}
+main:has(> .hero) > .section .service-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:34px;max-width:780px;margin:0 auto;z-index:1}
+main:has(> .hero) > .section .service-card{grid-template-columns:minmax(0,1fr);min-height:0;max-width:780px;margin-inline:auto;border-radius:20px;background:#f7ecdf;box-shadow:0 16px 40px #4c24120c;overflow:hidden}
+main:has(> .hero) > .section .service-card img{display:block;width:100%;height:clamp(230px,25vw,330px);min-height:0;object-fit:cover;object-position:center 48%;image-rendering:auto}
 main:has(> .hero) > .section .service-card>div{padding:clamp(22px,3.2vw,38px)}
 main:has(> .hero) > .section .service-card h3{font-size:clamp(24px,2.5vw,32px)}
 main:has(> .hero) > .section .service-card p{font-size:15px;max-width:760px}
@@ -220,3 +223,11 @@ main:has(> .hero) > .cta h2{font-size:clamp(30px,3.4vw,44px)}
 @keyframes homeOrnament{to{transform:rotate(360deg)}}
 @media(max-width:760px){main:has(> .hero) > .hero{padding-top:38px;gap:25px}main:has(> .hero) > .hero .hero-copy{width:calc(100% - 36px)}main:has(> .hero) > .hero .hero-image{min-height:270px;border-radius:18px 18px 0 0}main:has(> .hero) > .benefits{justify-content:flex-start;gap:16px 22px;padding:20px 22px}main:has(> .hero) > .benefits span{font-size:12px}main:has(> .hero) > .section .service-card img{height:240px}main:has(> .hero) > .split-section .trainer{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){main:has(> .hero) > .hero:before{animation:none}}
+
+/* Subtle cosmic accents in the open side margins of the Home page */
+main:has(> .hero) > .split-section:before,main:has(> .hero) > .testimonials:after,main:has(> .hero) > .faq-preview:before{content:'✦  ·  ✧';position:absolute;right:clamp(14px,4vw,68px);top:28px;color:#b98a52;font-size:clamp(20px,2.4vw,34px);letter-spacing:1.1em;opacity:.42;pointer-events:none;animation:cosmicTwinkle 5s ease-in-out infinite alternate}
+main:has(> .hero) > .testimonials:after{right:auto;left:clamp(14px,4vw,68px);top:auto;bottom:24px;content:'✧  ·  ✦'}
+main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:24px}
+@keyframes cosmicTwinkle{from{opacity:.25;transform:translateY(0)}to{opacity:.58;transform:translateY(-5px)}}
+@media(max-width:760px){main:has(> .hero) > .section:before{left:2px;top:9%;width:90px}main:has(> .hero) > .section:after{right:2px;bottom:6%;width:76px}main:has(> .hero) > .section .service-grid{max-width:100%;gap:24px}main:has(> .hero) > .section .service-card{max-width:100%}}
+@media(prefers-reduced-motion:reduce){main:has(> .hero) > .split-section:before,main:has(> .hero) > .testimonials:after,main:has(> .hero) > .faq-preview:before{animation:none}}
