@@ -105,3 +105,21 @@
 @keyframes awarenessGlow{0%,100%{transform:scale(.9);opacity:.12}50%{transform:scale(1.12);opacity:.25}}
 @media(max-width:800px){.about-story-intro{grid-template-columns:1fr;padding:24px 22px}.awareness-art{max-width:380px}.about-intro-copy{order:0}.awareness-art{order:1}}
 @media(prefers-reduced-motion:reduce){.awareness-art,.awareness-art *{animation:none!important}}
+
+/* Tantra & India: illustrated heritage image treatment */
+.inner-hero-image.india-heritage-image{
+  border-radius:48% 48% 16px 16px;
+  box-shadow:0 24px 60px #4c241a20;
+  animation:heroRise .9s ease both,indiaImageFloat 8s ease-in-out 1s infinite;
+}
+.inner-hero-image.india-heritage-image img{object-position:center}
+.inner-hero-image.india-heritage-image:after{
+  background:linear-gradient(180deg,transparent 58%,#32131b70);
+}
+@keyframes indiaImageFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .inner-hero-image.india-heritage-image{animation:none}
+}
