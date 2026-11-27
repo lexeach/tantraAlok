@@ -241,7 +241,7 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
   main:has(> .hero):before,
   main:has(> .hero):after{
     content:"";position:fixed;z-index:2;top:164px;bottom:0;width:max(0px,calc((100vw - 700px)/2));pointer-events:none;overflow:hidden;
-    background-repeat:no-repeat;opacity:.98;will-change:transform,filter;
+    background-repeat:no-repeat;opacity:.46;will-change:transform,filter;
   }
   main:has(> .hero):before{
     left:0;
@@ -258,7 +258,7 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
       radial-gradient(ellipse 90px 24px at 66% 22%,transparent 41%,#b7834c 43% 46%,transparent 48%),
       radial-gradient(circle at 22% 56%,#f4d8a0 0 13px,#b7834c 14px 16px,#f6e7c9 17px 21px,#9d6a7d 22px 30px,transparent 31px),
       radial-gradient(ellipse at 8% 88%,#d8b7a74a 0,transparent 52%);
-    animation:cosmicLeftFloat 24s ease-in-out infinite alternate;
+    animation:cosmicLeftFloat 13s ease-in-out infinite alternate;
   }
   main:has(> .hero):after{
     right:0;
@@ -275,14 +275,14 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
       radial-gradient(ellipse 110px 30px at 42% 27%,transparent 41%,#b7834c 43% 46%,transparent 48%),
       radial-gradient(circle at 77% 69%,#e9cda0 0 40px,#b78c54 41px 44px,#f6e7c9 45px 51px,#9d6a7d 52px 70px,#704454 71px 74px,transparent 75px),
       radial-gradient(ellipse at 95% 92%,#d8b7a74a 0,transparent 54%);
-    animation:cosmicRightFloat 28s ease-in-out infinite alternate;
+    animation:cosmicRightFloat 15s ease-in-out infinite alternate;
   }
   /* Artwork occupies the side gutters only; keep the center content above it. */
   main:has(> .hero)>*{position:relative;z-index:1}
   main:has(> .hero)>.hero{z-index:1}
 }
-@keyframes cosmicLeftFloat{0%{transform:translate3d(0,0,0) rotate(-.4deg);filter:brightness(.9)}50%{transform:translate3d(0,-12px,0) rotate(.4deg);filter:brightness(1.12)}100%{transform:translate3d(0,8px,0);filter:brightness(1)}}
-@keyframes cosmicRightFloat{0%{transform:translate3d(0,0,0) rotate(.4deg);filter:brightness(1)}50%{transform:translate3d(0,14px,0) rotate(-.4deg);filter:brightness(1.14)}100%{transform:translate3d(0,-8px,0);filter:brightness(.96)}}
+@keyframes cosmicLeftFloat{0%{transform:translate3d(-12px,0,0) rotate(-1deg);filter:brightness(.92)}35%{transform:translate3d(24px,-28px,0) rotate(1.5deg);filter:brightness(1.08)}70%{transform:translate3d(-18px,34px,0) rotate(-1deg);filter:brightness(1.12)}100%{transform:translate3d(18px,-12px,0) rotate(1deg);filter:brightness(1)}}
+@keyframes cosmicRightFloat{0%{transform:translate3d(14px,0,0) rotate(1deg);filter:brightness(1)}35%{transform:translate3d(-26px,32px,0) rotate(-1.5deg);filter:brightness(1.12)}70%{transform:translate3d(20px,-30px,0) rotate(1deg);filter:brightness(.96)}100%{transform:translate3d(-16px,18px,0) rotate(-1deg);filter:brightness(1.05)}}
 @media(max-width:1099px){main:has(> .hero):before,main:has(> .hero):after{content:none!important}}
 @media(prefers-reduced-motion:reduce){main:has(> .hero):before,main:has(> .hero):after{animation:none!important}}
 
@@ -302,7 +302,7 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
     position: absolute;
     display: block;
     border-radius: 50%;
-    opacity: .48;
+    opacity: .32;
     will-change: transform;
     background: radial-gradient(circle at 35% 30%, #fff7d9 0 12%, #e8c58a 26%, #b7834c 29% 34%, #f4e1c2 36% 48%, #a16c80 51% 65%, #704454 67% 70%, transparent 72%);
     box-shadow: 0 0 35px #caa16c24;
