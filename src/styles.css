@@ -241,7 +241,7 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
   main:has(> .hero):before,
   main:has(> .hero):after{
     content:"";position:fixed;z-index:2;top:164px;bottom:0;width:max(0px,calc((100vw - 700px)/2));pointer-events:none;overflow:hidden;
-    background-repeat:no-repeat;opacity:.46;will-change:transform,filter;
+    background-repeat:no-repeat;opacity:.34;will-change:transform,filter;
   }
   main:has(> .hero):before{
     left:0;
@@ -254,9 +254,9 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
       radial-gradient(circle at 74% 91%,#d8b16d 0 2px,transparent 3px),
       radial-gradient(ellipse at 20% 30%,#c8a1d04a 0,transparent 42%),
       radial-gradient(ellipse at 82% 72%,#e7c18b55 0,transparent 44%),
-      radial-gradient(circle at 66% 22%,#f8df9d 0 22px,#b7834c 23px 26px,#f6e7c9 27px 34px,#a16c80 35px 49px,#704454 50px 53px,transparent 54px),
+      radial-gradient(circle at 66% 22%,#f8df9d 0 22px,#b7834c 23px 26px,#f6e7c9 27px 34px,#a16c8050 35px 49px,#70445435 50px 53px,transparent 54px),
       radial-gradient(ellipse 90px 24px at 66% 22%,transparent 41%,#b7834c 43% 46%,transparent 48%),
-      radial-gradient(circle at 22% 56%,#f4d8a0 0 13px,#b7834c 14px 16px,#f6e7c9 17px 21px,#9d6a7d 22px 30px,transparent 31px),
+      radial-gradient(circle at 22% 56%,#f4d8a0 0 13px,#b7834c 14px 16px,#f6e7c9 17px 21px,#9d6a7d55 22px 30px,transparent 31px),
       radial-gradient(ellipse at 8% 88%,#d8b7a74a 0,transparent 52%);
     animation:cosmicLeftFloat 13s ease-in-out infinite alternate;
   }
@@ -273,7 +273,7 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
       radial-gradient(ellipse at 20% 76%,#e7c18b50 0,transparent 46%),
       radial-gradient(circle at 42% 27%,#e8c58a 0 28px,#b9854f 29px 32px,#f2dfc6 33px 39px,#c89b67 40px 43px,transparent 44px),
       radial-gradient(ellipse 110px 30px at 42% 27%,transparent 41%,#b7834c 43% 46%,transparent 48%),
-      radial-gradient(circle at 77% 69%,#e9cda0 0 40px,#b78c54 41px 44px,#f6e7c9 45px 51px,#9d6a7d 52px 70px,#704454 71px 74px,transparent 75px),
+      radial-gradient(circle at 77% 69%,#e9cda0 0 40px,#b78c54 41px 44px,#f6e7c9 45px 51px,#9d6a7d55 52px 70px,#70445435 71px 74px,transparent 75px),
       radial-gradient(ellipse at 95% 92%,#d8b7a74a 0,transparent 54%);
     animation:cosmicRightFloat 15s ease-in-out infinite alternate;
   }
@@ -281,8 +281,8 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
   main:has(> .hero)>*{position:relative;z-index:1}
   main:has(> .hero)>.hero{z-index:1}
 }
-@keyframes cosmicLeftFloat{0%{transform:translate3d(-12px,0,0) rotate(-1deg);filter:brightness(.92)}35%{transform:translate3d(24px,-28px,0) rotate(1.5deg);filter:brightness(1.08)}70%{transform:translate3d(-18px,34px,0) rotate(-1deg);filter:brightness(1.12)}100%{transform:translate3d(18px,-12px,0) rotate(1deg);filter:brightness(1)}}
-@keyframes cosmicRightFloat{0%{transform:translate3d(14px,0,0) rotate(1deg);filter:brightness(1)}35%{transform:translate3d(-26px,32px,0) rotate(-1.5deg);filter:brightness(1.12)}70%{transform:translate3d(20px,-30px,0) rotate(1deg);filter:brightness(.96)}100%{transform:translate3d(-16px,18px,0) rotate(-1deg);filter:brightness(1.05)}}
+@keyframes cosmicLeftFloat{0%{transform:translate3d(-2vw,0,0) rotate(-2deg);filter:brightness(.96)}35%{transform:translate3d(5vw,-6vh,0) rotate(3deg);filter:brightness(1.12)}70%{transform:translate3d(-4vw,7vh,0) rotate(-2deg);filter:brightness(1.15)}100%{transform:translate3d(4vw,-4vh,0) rotate(2deg);filter:brightness(1)}}
+@keyframes cosmicRightFloat{0%{transform:translate3d(2vw,0,0) rotate(2deg);filter:brightness(1)}35%{transform:translate3d(-5vw,7vh,0) rotate(-3deg);filter:brightness(1.12)}70%{transform:translate3d(4vw,-6vh,0) rotate(2deg);filter:brightness(.98)}100%{transform:translate3d(-4vw,5vh,0) rotate(-2deg);filter:brightness(1.08)}}
 @media(max-width:1099px){main:has(> .hero):before,main:has(> .hero):after{content:none!important}}
 @media(prefers-reduced-motion:reduce){main:has(> .hero):before,main:has(> .hero):after{animation:none!important}}
 
