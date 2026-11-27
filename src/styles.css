@@ -293,10 +293,10 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
   main:has(> .hero) > .cosmic-bubble-field {
     position: fixed;
     inset: 78px 0 0;
-    z-index: 0;
+    z-index: 2;
     overflow: hidden;
     pointer-events: none;
-    opacity: .62;
+    opacity: .82;
   }
   main:has(> .hero) > .cosmic-bubble-field .cosmic-bubble {
     position: absolute;
@@ -315,24 +315,24 @@ main:has(> .hero) > .faq-preview:before{content:'✧  ·  ✦';top:auto;bottom:2
     border-radius: 50%;
     transform: rotate(-24deg) scaleY(.28);
   }
-  .cosmic-bubble-1 { width: 76px; height: 76px; left: 5%; top: 17%; animation: bubbleTravel1 23s ease-in-out infinite alternate; }
-  .cosmic-bubble-2 { width: 112px; height: 112px; right: 7%; top: 34%; animation: bubbleTravel2 29s ease-in-out infinite alternate; }
-  .cosmic-bubble-3 { width: 48px; height: 48px; left: 14%; top: 65%; animation: bubbleTravel3 19s ease-in-out infinite alternate; }
-  .cosmic-bubble-4 { width: 62px; height: 62px; right: 17%; top: 74%; animation: bubbleTravel4 25s ease-in-out infinite alternate; }
-  .cosmic-bubble-5 { width: 28px; height: 28px; left: 28%; top: 42%; animation: bubbleTravel5 17s ease-in-out infinite alternate; }
-  .cosmic-bubble-6 { width: 36px; height: 36px; right: 29%; top: 16%; animation: bubbleTravel6 21s ease-in-out infinite alternate; }
-  .cosmic-bubble-7 { width: 58px; height: 58px; left: 2%; top: 83%; animation: bubbleTravel2 27s ease-in-out infinite alternate-reverse; }
-  .cosmic-bubble-8 { width: 44px; height: 44px; right: 3%; top: 9%; animation: bubbleTravel3 24s ease-in-out infinite alternate-reverse; }
-  .cosmic-bubble-9 { width: 22px; height: 22px; left: 39%; top: 82%; animation: bubbleTravel4 18s ease-in-out infinite alternate; }
-  .cosmic-bubble-10 { width: 84px; height: 84px; right: 36%; top: 58%; animation: bubbleTravel1 31s ease-in-out infinite alternate-reverse; }
-  main:has(> .hero) > .cosmic-bubble-field { z-index: 0; }
+  /* Keep the animated objects in the visible side gutters, above section backgrounds. */
+  .cosmic-bubble-1 { width: 76px; height: 76px; left: 4%; top: 18%; animation: bubbleTravel1 9s ease-in-out infinite alternate; }
+  .cosmic-bubble-2 { width: 112px; height: 112px; right: 4%; top: 30%; animation: bubbleTravel2 11s ease-in-out infinite alternate; }
+  .cosmic-bubble-3 { width: 48px; height: 48px; left: 13%; top: 58%; animation: bubbleTravel3 8s ease-in-out infinite alternate; }
+  .cosmic-bubble-4 { width: 62px; height: 62px; right: 13%; top: 68%; animation: bubbleTravel4 10s ease-in-out infinite alternate; }
+  .cosmic-bubble-5 { width: 28px; height: 28px; left: 2%; top: 42%; animation: bubbleTravel5 7s ease-in-out infinite alternate; }
+  .cosmic-bubble-6 { width: 36px; height: 36px; right: 2%; top: 13%; animation: bubbleTravel6 8.5s ease-in-out infinite alternate; }
+  .cosmic-bubble-7 { width: 58px; height: 58px; left: 7%; top: 82%; animation: bubbleTravel2 12s ease-in-out infinite alternate-reverse; }
+  .cosmic-bubble-8 { width: 44px; height: 44px; right: 7%; top: 88%; animation: bubbleTravel3 9.5s ease-in-out infinite alternate-reverse; }
+  .cosmic-bubble-9 { width: 22px; height: 22px; left: 17%; top: 34%; animation: bubbleTravel4 7.5s ease-in-out infinite alternate; }
+  .cosmic-bubble-10 { width: 84px; height: 84px; right: 16%; top: 52%; animation: bubbleTravel1 13s ease-in-out infinite alternate-reverse; }
   main:has(> .hero) > .hero, main:has(> .hero) > section { position: relative; z-index: 1; }
 }
-@keyframes bubbleTravel1 { 0%{transform:translate3d(-2vw,0,0) rotate(0deg)} 35%{transform:translate3d(9vw,13vh,0) rotate(90deg)} 70%{transform:translate3d(3vw,-8vh,0) rotate(210deg)} 100%{transform:translate3d(13vw,9vh,0) rotate(360deg)} }
-@keyframes bubbleTravel2 { 0%{transform:translate3d(0,0,0) rotate(0deg)} 30%{transform:translate3d(-10vw,10vh,0) rotate(-110deg)} 65%{transform:translate3d(-4vw,-13vh,0) rotate(-230deg)} 100%{transform:translate3d(-14vw,4vh,0) rotate(-360deg)} }
-@keyframes bubbleTravel3 { 0%{transform:translate3d(0,0,0) scale(.94)} 50%{transform:translate3d(12vw,-12vh,0) scale(1.08)} 100%{transform:translate3d(5vw,14vh,0) scale(.98)} }
-@keyframes bubbleTravel4 { 0%{transform:translate3d(0,0,0) rotate(0deg)} 45%{transform:translate3d(-13vw,-7vh,0) rotate(180deg)} 100%{transform:translate3d(4vw,12vh,0) rotate(360deg)} }
-@keyframes bubbleTravel5 { 0%,100%{transform:translate3d(0,0,0);opacity:.35} 50%{transform:translate3d(7vw,16vh,0);opacity:.72} }
-@keyframes bubbleTravel6 { 0%{transform:translate3d(0,0,0)} 40%{transform:translate3d(-8vw,14vh,0)} 100%{transform:translate3d(10vw,-11vh,0)} }
+@keyframes bubbleTravel1 { 0%{transform:translate3d(-1vw,0,0) rotate(0deg)} 35%{transform:translate3d(3vw,5vh,0) rotate(90deg)} 70%{transform:translate3d(-2vw,-4vh,0) rotate(210deg)} 100%{transform:translate3d(4vw,3vh,0) rotate(360deg)} }
+@keyframes bubbleTravel2 { 0%{transform:translate3d(0,0,0) rotate(0deg)} 30%{transform:translate3d(-4vw,4vh,0) rotate(-110deg)} 65%{transform:translate3d(2vw,-5vh,0) rotate(-230deg)} 100%{transform:translate3d(-3vw,3vh,0) rotate(-360deg)} }
+@keyframes bubbleTravel3 { 0%{transform:translate3d(0,0,0) scale(.94)} 50%{transform:translate3d(4vw,-5vh,0) scale(1.08)} 100%{transform:translate3d(-2vw,5vh,0) scale(.98)} }
+@keyframes bubbleTravel4 { 0%{transform:translate3d(0,0,0) rotate(0deg)} 45%{transform:translate3d(-4vw,-3vh,0) rotate(180deg)} 100%{transform:translate3d(2vw,5vh,0) rotate(360deg)} }
+@keyframes bubbleTravel5 { 0%,100%{transform:translate3d(0,0,0);opacity:.4} 50%{transform:translate3d(2vw,5vh,0);opacity:.9} }
+@keyframes bubbleTravel6 { 0%{transform:translate3d(0,0,0)} 40%{transform:translate3d(-3vw,5vh,0)} 100%{transform:translate3d(4vw,-4vh,0)} }
 @media (max-width:899px) { main:has(> .hero) > .cosmic-bubble-field { display:none; } }
 @media (prefers-reduced-motion:reduce) { main:has(> .hero) > .cosmic-bubble-field .cosmic-bubble { animation:none!important; } }
